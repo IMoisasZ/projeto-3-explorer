@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Crie seu evento</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body>
+		<header>
+			<section>
+				<h1>Crie e compartilhe seu evento.</h1>
+				<p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+			</section>
+		</header>
+		<main>
+			<form
+				action=""
+				id="events">
+				<h2>Informações do Evento</h2>
+				<hr />
+				<div class="config">
+					<label
+						class="label"
+						for="titulo"
+						>Titulo do evento <span>(minimo 8 caracteres)</span></label
+					>
+					<input
+						class="input"
+						type="text"
+						name="titulo"
+						id="titulo"
+						required
+						minlength="8" />
+				</div>
+				<div class="config">
+					<label
+						class="label"
+						for="link"
+						>Link do evento <span>(comece com https://)</span></label
+					>
+					<input
+						class="input"
+						type="url"
+						name="link"
+						required
+						id="link" />
+				</div>
+				<div class="config">
+					<label
+						class="label"
+						for="whatsapp"
+						>Whatsapp para contato <span>(somente números)</span></label
+					>
+					<input
+						class="input"
+						type="number"
+						name="whatsapp"
+						required
+						id="whatsapp" />
+				</div>
+				<div class="config">
+					<label
+						class="label"
+						for="info-extra"
+						>Informaões Extras</label
+					>
+					<textarea
+						name="info-extra"
+						id="info-extra"
+						required
+						cols="30"
+						rows="10"></textarea>
+				</div>
+				<div class="config">
+					<label
+						class="label"
+						for="Categoria"
+						>Categoria</label
+					>
+					<select
+						name="categoria"
+						id="categoria"
+						required>
+						<option value="live">Ao vivo</option>
+						<option value="podcast">Podcast</option>
+						<option value="mentoring">Mentoria</option>
+					</select>
+				</div>
+				<h2>Privacidade</h2>
+				<hr />
+				<div class="config">
+					<label
+						class="label"
+						for="email-adm"
+						>E-mail do administrador
+						<span>(digite um email válido)</span></label
+					>
+					<input
+						class="input"
+						type="email"
+						required
+						name="email-adm"
+						id="email-adm" />
+				</div>
+				<div class="config">
+					<label
+						class="label"
+						for="senha"
+						>Senha de acesso para os participantes
+						<span>(minimo 8 caracteres)</span></label
+					>
+					<input
+						class="input"
+						type="password"
+						required
+						minlength="8"
+						name="senha"
+						id="senha" />
+				</div>
+
+				<div class="config-check">
+					<input
+						type="checkbox"
+						name="evento-privado"
+						id="evento-privado" />
+					<label for="evento-privado">Evento privado</label>
+				</div>
+
+				<h2>Dia e hora</h2>
+				<hr />
+				<section>
+					<div class="config">
+						<label
+							class="label"
+							for="data"
+							>Data</label
+						>
+						<input
+							class="input"
+							type="date"
+							name="data"
+							required
+							id="data" />
+					</div>
+					<div class="config">
+						<label
+							class="label"
+							for="inicio"
+							>Das</label
+						>
+						<input
+							class="input"
+							type="time"
+							name="inicio"
+							required
+							id="inicio" />
+					</div>
+					<div class="config">
+						<label
+							class="label"
+							for="termino"
+							>Até</label
+						>
+						<input
+							class="input"
+							type="time"
+							name="termino"
+							required
+							id="termino" />
+					</div>
+				</section>
+			</form>
+			<div id="btn">
+				<button
+					form="events"
+					onclick="alert('Evento salvo com sucesso')">
+					Salvar evento
+				</button>
+			</div>
+		</main>
+	</body>
+</html>

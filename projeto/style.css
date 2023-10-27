@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 368px;
+    background-color: #121214;
+}
+
+header section {
+    width: 736px;
+    margin: 0 auto;
+    padding: 80px 0 42px;
+}
+
+header section h1 {
+    font-family: 'Archivo', sans-serif;
+    width: 319px;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+header section p {
+    width: 300px;
+    color: #42D3FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+form {
+    width: 736px;
+    margin: -91px auto 0px;
+    padding: 64px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    background-color: #FAFAFC;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 16px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+hr {
+    border: 1px solid #D9D9D9;
+}
+
+.label {
+    color: #4E4958;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
+    width: 100%;
+    margin: 24px 0 8px;
+}
+
+.label span {
+    color: #C1BCCC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px; /* 166.667% */
+}
+
+.input, textarea, select {
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background-color: #FAFAFC;
+    height: 56px;
+    width: 100%;
+    padding: 15px 0 15px 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.config {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+textarea {
+    resize: none;
+    height: 168px;
+}
+
+select {
+    color: #C1BCCC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 48px;
+    appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+}
+
+.config-check {
+    position: relative;
+    margin: 24px 0 48px;
+}
+
+.config-check input {
+    display: flex;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    opacity: 0;
+}
+
+.config-check label {
+    color: #4E4958;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.config-check label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+}
+
+.config-check input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_2613_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2613_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.config-check input:focus + label::before {
+    outline: 2px solid #000;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#data {
+    width: 312px;
+}
+
+#inicio, #termino {
+    width: 128px;
+}
+
+#btn {
+    width: 736px;
+    margin: 0 auto 91px;
+    padding: 64px;
+    border-radius: 0px 0px 8px 8px;
+    background: #F0F0F4;
+} 
+
+#btn button {
+    width: 100%;
+    padding: 15px 40px;
+    border-radius: 8px;
+    background: #04D361;
+    border: none;
+
+    font-family: 'Archivo', sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#btn button:hover {
+    background-color: #09582d;;
+}
+
+input:invalid, textarea:invalid, select:invalid {
+    border: 1px solid #FF1010;
+}
