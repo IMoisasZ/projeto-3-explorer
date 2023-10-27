@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, legend, button {
+    font-family: 'Staatliches', sans-serif;
+}
+
+label, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+input, select, textarea {
+    padding: 0 20px;
+}
+
+body {
+    background: #BFD7E4;
+}
+
+body::before {
+    content: "";
+    background: #293241;;
+    display: block;
+    width: 100%;
+    height: 465px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+#page {
+    width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding-top: 107px;
+    margin-bottom: 32px;
+}
+
+header h1, header p {
+    color: #fff;
+}
+
+header p {
+    height: 46px;
+}
+
+form {
+    border-radius: 20px;
+    background: #FFF;
+    padding-bottom: 64px;
+    margin-bottom: 390px;
+}
+
+fieldset {
+    border: none;
+}
+
+#private-info legend {
+    border-radius: 20px 20px 0 0 ;
+    background: #F67669;
+    height: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#private-info-container {
+    margin-top: 14px;
+    padding: 0 64px;
+}
+
+#private-info-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-config {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-config label, .select-config label, .textarea-config label {
+    margin: 16px 0 8px;
+}
+
+.input-config input {
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+}
+
+#mentor-info, #next-mentoring-info {
+    margin-top: 30px;
+    padding: 0 64px;
+    
+}
+
+#mentor-info legend, #next-mentoring-info legend {
+    color: #253B51;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+}
+
+.select-config {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin-top: 14px;
+}
+
+.select-config select {
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    height: 55px;
+}
+
+.textarea-config {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 14px;
+}
+
+.textarea-config textarea {
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    resize: none;
+}
+
+.checkbox-config {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.checkbox-config input {
+    width: 24px;
+    height: 24px;
+}
+
+#next-mentoring-info-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+span {
+    color: #C1BCCC;
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 8px;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 64px 64px 0;
+}
+
+#btn button {
+    width: 100%;
+    padding: 15px 40px;
+    border-radius: 8px;
+    color: #fff;
+    background: #F67669;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#btn button:hover {
+    background: #6b1910;
+}
